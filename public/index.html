@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel booking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="hero">
+    <div class="logo">Rami Hotel</div>
+    <ul class="menu">
+      <li class="home"><a href="http://127.0.0.1:5500/public/index.html">Home</a></li>
+      <li class="offers"><a href="http://127.0.0.1:5500/public/reviewUs.html">Review us</a></li>
+      <li class="contactus"><a href="#">Contact Us</a></li>
+      <li class="signUp"><a href="http://127.0.0.1:5500/public/signup.html">Sign up / Login </a></li>
+    </ul>
+  </div>
+
+  <div>
+    <h1>
+      Hotel Room Booking system
+    </h1>
+</div>
+
+  <form id="bookingForm">
+    <label for="roomType">Room Type:</label>
+    <select id="roomType" name="roomType">
+      <option value="single">Single Room</option>
+      <option value="double">Double Room</option>
+      <option value="suite">Suite</option>
+      <option value="ConferenceFacilities">Conference Facilities</option>
+    </select>
+
+    <label for="checkInDate">Check-In Date:</label>
+    <input type="date" id="checkInDate" name="checkInDate" required>
+
+    <label for="checkOutDate">Check-Out Date:</label>
+    <input type="date" id="checkOutDate" name="checkOutDate" required>
+
+    <button type="button" onclick="submitBooking()">Book Room</button>
+  </form>
+
+  <div id="bookingResult"></div>
+
+  <div>
+    <p>Your bookings</p>
+    <table border="1" id="bookings-table">
+      <tr>
+        <th>ID</th>
+        <th>Room Type</td>
+        <th>Check-in Date</th>
+        <th>Check-out Date</th>
+        <th>Delete</th>
+      </tr>
+    </table>
+  </div>
+
+  <div class="userBox">
+    <p id="user-name"></p>
+    <button id="sign-out">Sign out</button>
+  </div>
+
+  <div class="review-us-section">
+    <a href="reviewUs.html" class="review-us-link">Review us</a>
+  </div>
+
+  <script src="js/requestHandler.js"></script>
+  <script src="js/bookingHandler.js"></script>
+  <script src="js/indexPageHandler.js"></script>
+</body>
+</html>

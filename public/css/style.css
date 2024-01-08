@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  stroke: #F26521;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  gap: 32px;
+}
+
+.menu a {
+  font-weight: 500;
+  color: #000000;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #F26521;
+}
+
+h1 {
+  text-align: center;
+  color: #F26521;
+}
+
+form {
+  margin: 20px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #F26521;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #F265219;
+}
+
+.userBox {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.review-us-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.review-us-link {
+  text-align: center;
+  text-decoration: none;
+  color: #F26521;
+}

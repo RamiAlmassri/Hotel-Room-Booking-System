@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Us!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div>
+        <p class="text-center text-3xl mt-5 text-orange-600">
+            Hotel Room Booking System
+        </p>
+    </div>
+
+    <section>
+        <h1 class="text-center text-3xl mt-7">REVIEW</h1>
+        <form method="get">
+            <div class="lg:w-1/3 md:w-2/3 sm:w-1/2 mt-5 flex flex-col justify-center items-center m-auto gap-2">
+                <div class="flex flex-col w-full">
+                    <label for="email" class="text-md">What do you think about our hotel ?</label>
+                    <textarea name="newReview" id="newReview" rows="4" class="p-1 pl-2 pr-2 w-full  border border-black rounded-xl bg-gray-300 focus:outline-none"></textarea>
+                </div>
+                <div class="flex flex-col w-full">
+                    <button type="button" id="addReview" class="mt-4 bg-orange-600 p-3 text-gray-100 text-2xl rounded-2xl transition ease-in-out delay-50 hover:bg-orange-600">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div id="errorMessage" class="bg-red-200 mt-6 lg:w-1/3 sm:w-1/2 md:w-2/3 m-auto mb-7 rounded-2xl text-center p-2 hidden"></div>
+        <div id="successMessage" class="bg-green-400 mt-6 lg:w-1/3 sm:w-1/2 md:w-2/3 m-auto mb-7 rounded-2xl text-center p-2 hidden"></div>
+    </section>
+
+    <section>
+        <div id="reviews" class="pl-5 pr-5">
+
+        </div>
+    </section>
+
+    <script src="js/requestHandler.js"></script>
+    <script src="js/reviewsHandler.js"></script>
+</body>
+</html>

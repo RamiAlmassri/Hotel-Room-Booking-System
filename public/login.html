@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div>
+        <p class="text-center text-3xl mt-5 text-orange-600">
+            Hotel Room Booking system
+        </p>
+    </div>
+
+    <!-- Login section -->
+    <section>
+        <h1 class="text-center text-3xl mt-7 text-orange-600">Login</h1>
+        <form method="get">
+            <div class="lg:w-1/3 md:w-2/3 sm:w-1/2 mt-5 flex flex-col justify-center items-center m-auto gap-2">
+                <div class="flex flex-col w-full">
+                    <label for="email" class="text-md">Email</label>
+                    <input type="email" name="email" id="email" class="bg-gray-300 h-8 p-2 text-lg rounded-lg focus:outline-none" />
+                </div>
+                <div class="flex flex-col w-full">
+                    <label for="password" class="text-md">Password</label>
+                    <input type="password" name="password" id="password" class="bg-gray-300 h-8 p-2 text-lg rounded-lg focus:outline-none" />
+                </div>
+                <div class="flex flex-col w-full">
+                    <button type="button" id="loginBtn" onclick="login()" class="mt-4 bg-orange-600 p-3 text-gray-100 text-2xl rounded-2xl transition ease-in-out delay-50 hover:bg-orange-600">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div class="text-center mt-4">
+            <p>Don't have an account ? <a href="signup.html" class="text-orange-600 hover:text-orange-600 transition ease-in-out delay-50">Join us!</a></p>
+        </div>
+        <div id="errorMessage" class="bg-red-200 mt-6 lg:w-1/3 sm:w-1/2 md:w-2/3 m-auto mb-7 rounded-2xl text-center p-2 hidden"></div>
+        <div id="successMessage" class="bg-green-400 mt-6 lg:w-1/3 sm:w-1/2 md:w-2/3 m-auto mb-7 rounded-2xl text-center p-2 hidden"></div>
+    </section>
+
+    <script src="js/requestHandler.js"></script>
+    <script src="js/loginHandler.js"></script>
+</body>
+</html>
